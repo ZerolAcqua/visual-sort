@@ -18,16 +18,16 @@ public class Array {
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
             String line;
-            List<Integer> list = new ArrayList<>();
             // ArrayList是一个大小可改变的数组，规模是动态增加的
+            List<Integer> list = new ArrayList<>();
             while ((line = br.readLine()) != null) {
-                list.add(Integer.parseInt(line));
                 // 向List集合中添加按行读取并整型化的数据
+                list.add(Integer.parseInt(line));
             }
             array = new long[list.size()];
             for (int i = 0; i < list.size(); i++) {
-                array[i] = Integer.parseInt(list.get(i).toString());
                 // 最终转换成整数存入
+                array[i] = Integer.parseInt(list.get(i).toString());
             }
 
             long stop = System.currentTimeMillis();
