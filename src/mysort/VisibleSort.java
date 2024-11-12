@@ -10,7 +10,7 @@ public class VisibleSort extends JPanel {
     JFrame jFrame;
     long[] a;
 
-    VisibleSort(long data[], JFrame UIFrame) {
+    VisibleSort(long[] data, JFrame UIFrame) {
         jFrame = UIFrame;
         a = data;
         windowFrom();
